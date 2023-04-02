@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "description": "An example Snap written in TypeScript.",
+  "proposedName": "Base Snap\n",
+  "source": {
+    "shasum": "c3zJOCrroWks4m/x7cGUufmC/hlHwBtw8Pg52fvSVHA=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "packageName": "base-snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_dialog": {},
+    "endowment:rpc": {
+      "snaps": true,
+      "dapps": true
+    }
+  },
+  "manifestVersion": "0.1"
+}

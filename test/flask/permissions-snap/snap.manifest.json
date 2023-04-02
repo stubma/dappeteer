@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "description": "An example Snap written in TypeScript.",
+  "proposedName": "Permissions Snap\n",
+  "source": {
+    "shasum": "11yd71cflGvr3G7PciuYOZ56IJ+/PnQU49Q6lUHKgAo=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "packageName": "permissions-snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_notify": {},
+    "snap_manageState": {},
+    "endowment:rpc": {
+      "snaps": true,
+      "dapps": true
+    }
+  },
+  "manifestVersion": "0.1"
+}

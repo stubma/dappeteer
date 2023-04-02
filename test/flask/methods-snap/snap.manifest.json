@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "description": "An example Snap written in TypeScript.",
+  "proposedName": "Methods Snap\n",
+  "source": {
+    "shasum": "OUsE/g0W1apXjYs+eNKwbP56eQb/BPazbIsTsdNB/CA=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "packageName": "base-snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_dialog": {},
+    "snap_notify": {},
+    "endowment:rpc": {
+      "snaps": true,
+      "dapps": true
+    }
+  },
+  "manifestVersion": "0.1"
+}

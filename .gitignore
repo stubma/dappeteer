@@ -1,0 +1,17 @@
+*DS_Store
+node_modules
+build
+dist
+.idea
+*.log
+*.png
+
+### VisualStudioCode ###
+.vscode/*      # Maybe .vscode/**/* instead - see comments
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+userdata/
+metamask/v*
