@@ -3,23 +3,23 @@ import puppeteer from "puppeteer"
 import path from 'path'
 
 async function __main__() {
+  const version = "v10.25.0"
   const { metaMask, browser } = await dappeteer.bootstrap({
     seed: "proof hurt wedding taxi room dynamic olive hire sea balance arctic margin",
     password: "12345678",
     showTestNets: true,
-    metaMaskVersion: "v10.25.0",
-    metaMaskPath: path.resolve('metamask/v10.25.0'),
+    metaMaskPath: path.resolve(`metamask/${version}`),
     automation: "playwright",
     headless: false,
     userDataDir: path.resolve('userdata'),
     puppeteerOptions: {
       executablePath: puppeteer.executablePath("chrome"),
-      slowMo: 1000,
+      slowMo: 200,
       ignoreHTTPSErrors: true
     },
     playwrightOptions: {
       executablePath: puppeteer.executablePath("chrome"),
-      slowMo: 1000
+      slowMo: 200
     }
   })
 
