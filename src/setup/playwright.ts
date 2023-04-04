@@ -17,6 +17,7 @@ export async function launchPlaywright(
       "--window-size=1920,1080",
       `--disable-extensions-except=${metamaskPath}`,
       `--load-extension=${metamaskPath}`,
+      ...(options.proxy ? [`--proxy-server=${options.proxy}`] : []),
       ...(options.playwrightOptions?.args || []),
       ...(options.headless ? ["--headless=new"] : []),
     ],

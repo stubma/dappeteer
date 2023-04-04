@@ -25,6 +25,7 @@ export type DappeteerLaunchOptions = {
   playwrightOptions?: PlaywrightLaunchOptions;
   userDataDir?: string;
   key?: string;
+  proxy?: string;
 };
 
 declare global {

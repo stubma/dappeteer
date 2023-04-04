@@ -17,6 +17,7 @@ export async function launchPuppeteer(
       "--window-size=1920,1080",
       `--disable-extensions-except=${metamaskPath}`,
       `--load-extension=${metamaskPath}`,
+      ...(options.proxy ? [`--proxy-server=${options.proxy}`] : []),
       ...(options.puppeteerOptions?.args || []),
       ...(options.headless ? ["--headless=new"] : []),
     ],

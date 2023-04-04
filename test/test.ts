@@ -12,10 +12,11 @@ async function __main__() {
     automation: "playwright",
     headless: false,
     userDataDir: path.resolve('userdata'),
+    proxy: "http://127.0.0.1:7890",
     puppeteerOptions: {
       executablePath: puppeteer.executablePath("chrome"),
       slowMo: 200,
-      ignoreHTTPSErrors: true
+      ignoreHTTPSErrors: true,
     },
     playwrightOptions: {
       executablePath: puppeteer.executablePath("chrome"),
