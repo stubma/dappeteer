@@ -1,4 +1,4 @@
-const dappeteer = require("../src/index")
+const dappeteer = require("../index")
 import puppeteer from "puppeteer"
 import path from 'path'
 
